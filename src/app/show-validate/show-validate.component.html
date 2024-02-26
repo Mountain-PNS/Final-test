@@ -1,0 +1,16 @@
+<p *ngIf="(field?.dirty || field?.touched ) && field?.errors?.required" class="text-red-600 font-bold m-2">
+    Không được để trống
+  </p>
+  <p *ngIf="(field?.dirty || field?.touched ) && field?.errors?.email" class="text-red-600 font-bold m-2">
+      {{key}} không đúng định dạng
+  </p>
+  <p *ngIf="(field?.dirty || field?.touched ) && field?.errors?.minlength" class="text-red-600 font-bold m-2">
+      {{key}} không nhập nhỏ hơn 6
+  </p>
+  <p *ngIf="(field?.dirty || field?.touched ) && field?.errors?.maxlength" class="text-red-600 font-bold m-2">
+    {{key}} không nhập lớn hơn 32
+</p>
+  <p *ngIf="(field?.dirty || field?.touched ) && field?.errors?.pattern" class="text-red-600 font-bold m-2">
+      {{key}} không phải là số
+  </p>
+  

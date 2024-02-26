@@ -1,0 +1,78 @@
+<!-- component -->
+
+<!-- COMPONENT CODE -->
+
+<div
+  class="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl bg-gray-300"
+>
+  <div class="flex">
+    <h3 class="font-bold uppercase text-2xl">Thêm sản phẩm</h3>
+  </div>
+  <form class="mt-5" >
+    <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
+      <div class="">
+        <input
+          class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+          type="text"
+          placeholder=" Name*"
+          formControlName="title"
+        />
+  
+      </div>
+      <div class="">
+        <select
+          name="category"
+          class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+          formControlName="category"
+        >
+          <option value="">Mời chọn</option>
+          <option >
+           
+          </option>
+        </select>
+   
+      </div>
+      <div class="">
+        <input
+          class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+          type="number"
+          placeholder="Gía*"
+          formControlName="price"
+        />
+        
+      </div>
+      
+      <div class="">
+        <input
+          class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+          type="text"
+          placeholder="Hình ảnh*"
+          formControlName="image"
+        />
+       
+      </div>
+    </div>
+    <div class="my-10">
+      <textarea
+        placeholder="Message*"
+        class="w-full h-32 bg-gray-100 text-gray-900 mt-2 rounded-lg focus:outline-none focus:shadow-outline"
+        formControlName="desc"
+      >
+    
+      </textarea>
+    </div>
+    <p class="text-red-600 font-bold m-2">
+
+    </p>
+    <div class="my-2 w-1/2 lg:w-1/4">
+      <button
+        class="uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
+        type="submit"
+      >
+        Send Message
+      </button>
+    </div>
+  </form>
+</div>
+
+<!-- COMPONENT CODE -->
